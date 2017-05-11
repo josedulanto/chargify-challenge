@@ -19,11 +19,15 @@ class Player
     'Hello World!'
   end
 
-  def move_to(*args)
+  def move_to(*args, find_location_visited_twice: false)
+    walk_method = find_location_visited_twice ? :recorded_walk : :simple_walk
+
     args.join(' ').scan(/(L|R)(\d+)/).each do |direction, steps|
       turn(direction)
-      simple_walk(steps.to_i)
+      visited_twice = send(walk_method, steps.to_i)
+      break if visited_twice == true && find_location_visited_twice
     end
+
     @x.abs + @y.abs
   end
 
@@ -45,6 +49,7 @@ class Player
   def recorded_walk(steps)
     steps.times do
       simple_walk(1)
+      return true if @locations.include?([@x, @y])
       @locations << [@x, @y]
     end
   end
