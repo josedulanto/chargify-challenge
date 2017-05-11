@@ -23,6 +23,7 @@ class Player
       turn(direction)
       walk(steps.to_i)
     end
+    @x.abs + @y.abs
   end
 
   def turn(direction)
