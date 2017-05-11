@@ -27,8 +27,16 @@ describe Player do
   end
 
   describe 'walking' do
-    it 'should walk some steps' do
-      @player.walk(5).must_equal(5)
+    it 'should walk 5 steps north' do
+      @player.walk(5)
+      [@player.x, @player.y].must_equal([0, 5])
+    end
+
+    it 'should walk 5 steps north, 5 steps east' do
+      @player.walk(5)
+      @player.turn('R')
+      @player.walk(5)
+      [@player.x, @player.y].must_equal([5, 5])
     end
   end
 

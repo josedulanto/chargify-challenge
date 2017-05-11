@@ -1,7 +1,7 @@
 require 'pry'
 
 class Player
-  attr_reader :direction
+  attr_reader :direction, :x, :y
 
   NORTH = 0
   EAST = 1
@@ -10,6 +10,8 @@ class Player
 
   def initialize
     @direction = NORTH
+    @x = 0
+    @y = 0
   end
 
   def say_hello
@@ -19,7 +21,7 @@ class Player
   def move_to(*args)
     args.join(' ').scan(/(L|R)(\d+)/).each do |direction, steps|
       turn(direction)
-      walk(steps)
+      walk(steps.to_i)
     end
   end
 
@@ -30,7 +32,12 @@ class Player
   end
 
   def walk(steps)
-    steps
+    case @direction
+    when NORTH then @y += steps
+    when EAST then @x += steps
+    when SOUTH then @y -= steps
+    when WEST then @x -= steps
+    end
   end
 
 end
