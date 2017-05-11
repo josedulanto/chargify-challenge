@@ -1,6 +1,7 @@
 require 'pry'
 
 class Player
+  attr_reader :direction
 
   NORTH = 0
   EAST = 1
@@ -23,7 +24,9 @@ class Player
   end
 
   def turn(direction)
-    direction
+    @direction += (direction == 'R' ? 1 : -1)
+    @direction = NORTH if @direction > WEST
+    @direction = WEST if @direction.negative?
   end
 
   def walk(steps)
