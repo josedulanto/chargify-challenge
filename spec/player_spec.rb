@@ -116,7 +116,7 @@ describe Player do
               'L1', 'R4', 'R3', 'L4', 'R5', 'L2', 'L2', 'R5', 'R1', 'R2',
               'L4', 'L4', 'L5', 'R3', 'L4',
               find_location_visited_twice: true)
-             .must_equal(1)
+             .must_equal(166)
     end
   end
 
