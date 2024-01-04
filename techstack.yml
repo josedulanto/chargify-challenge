@@ -1,7 +1,8 @@
 repo_name: josedulanto/chargify-challenge
 report_id: 29aa39eee123ed0b001f0b4237b645a7
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T15:42:29+00:00'
+timestamp: '2024-01-04T15:01:26+00:00'
 requested_by: josedulanto
 provider: github
 branch: master
@@ -17,8 +18,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/989/ruby.png
-  detection_source_url: Gemfile.lock
-  detection_source: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/chargify-challenge/blob/master/Gemfile.lock
+  detection_source: Repo Metadata
   last_updated_by: José Dulanto
   last_updated_on: 2017-05-11 17:43:45.000000000 Z
 - name: Git
@@ -29,6 +30,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/josedulanto/chargify-challenge
   detection_source: Repo Metadata
 - name: RuboCop
   description: A Ruby static code analyzer, based on the community Ruby style guide
@@ -40,7 +42,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/2643/rubocop.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/chargify-challenge/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2017-05-11 17:43:45.000000000 Z
@@ -52,6 +54,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/josedulanto/chargify-challenge/blob/master/Gemfile
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2017-05-11 17:43:45.000000000 Z
@@ -66,7 +69,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18818/default_f36df1cfa9ff6061d7f9b4879088be8538581c49.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/chargify-challenge/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2017-05-11 17:43:45.000000000 Z
@@ -80,7 +83,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18815/default_f582e4648f4682adb72d2b201218cda7f8e894ac.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/chargify-challenge/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2017-05-11 17:43:45.000000000 Z
